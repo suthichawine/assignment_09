@@ -1,0 +1,31 @@
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, prefer_const_literals_to_create_immutables
+import 'package:assignment_09/app_route.dart';
+import 'package:flutter/material.dart';
+
+class WelcomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Welcome to Mikucha!',
+              style: TextStyle(fontSize: 20),
+            ),
+            SizedBox(height: 20),
+            Image.asset('asset/cha.jpg', width: 300, height: 300),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, AppRouter.login);
+                // ไปยังหน้าถัดไป
+              },
+              child: Text('Next'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
