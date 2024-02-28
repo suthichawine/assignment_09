@@ -18,7 +18,7 @@ class WelcomeScreen extends StatelessWidget {
             Image.asset('asset/cha.jpg', width: 300, height: 300),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushReplacementNamed(context, AppRouter.login);
+                Navigator.pushReplacementNamed(context, AppRouter.todo);
                 // ไปยังหน้าถัดไป
               },
               child: Text('Next'),

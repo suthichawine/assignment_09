@@ -38,7 +38,7 @@ class Loginscreen extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.pushReplacementNamed(context, AppRouter.login);
+                  Navigator.pushReplacementNamed(context, AppRouter.todo);
                   // ไปยังหน้าถัดไป
                 },
                 child: Text('Login'),
